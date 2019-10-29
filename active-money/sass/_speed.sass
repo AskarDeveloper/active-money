@@ -1,0 +1,190 @@
+input
+	font-family: "Proxima Nova", sans-serif
+	color: $input-color
+	outline: none
+	border: none
+button
+	outline: none
+	cursor: pointer
+	border: none
+	font-family: "Proxima Nova", sans-serif
+	color: $text-color-dark
+	background-color: $active-color
+	font-weight: 700
+	border-radius: 50px
+	&:hover
+		box-shadow: 0 0 13px rgba(0, 0, 0, 0.19)
+		background-color: darken($active-color, 16)
+a
+	text-decoration: none
+	outline: none
+.popup-overlay, .thanks-overlay
+	display: none
+.outer__phone
+	color: $text-color-light
+	font-family: "Roboto", sans-serif
+.form__input
+	width: 301px
+	padding: 16px 50px 16px 50px
+	border-radius: 50px
+	font-size: 14px
+	font-weight: 400
+	&:focus
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.3)
+.user-name
+	margin-right: 3px
+	margin-left: 3px
+	margin-bottom: 19px
+	position: relative
+	display: inline-block
+	&:before
+		content: ""
+		position: absolute
+		width: 20px
+		height: 20px
+		top: 50%
+		left: 6%
+		transform: translateY(-50%)
+		background: url(../img/main/user_icon.png) center no-repeat
+.user-phone
+	margin-right: 3px
+	margin-left: 3px
+	margin-bottom: 19px
+	position: relative
+	display: inline-block
+	&:before
+		content: ""
+		position: absolute
+		width: 20px
+		height: 25px
+		left: 6.5%
+		top: 50%
+		transform: translateY(-50%)
+		background: url(../img/main/phone_icon.png) center no-repeat
+.main-overlay
+	background: url(../img/main/main-bg-img.png) center no-repeat, linear-gradient(75deg, $left-color, $right-color) 
+	background-size: cover
+	color: $text-color-light
+.main
+	padding-top: 30px
+	padding-bottom: 100px
+	display: flex
+	justify-content: space-between
+	&__left-block
+		width: 670px
+	&__title
+		margin-top: 50px
+		margin-bottom: 0
+		font-size: 48px
+		font-weight: 700
+	&__subtitle
+		margin-bottom: 15px
+		flex-basis: 100%
+		font-size: 24px
+		font-weight: 400
+	&__descr
+		margin-bottom: 30px
+		font-size: 18px
+		font-weight: 300
+	&__button
+		height: 60px
+		width: 243px
+		border-radius: 30px
+		font-size: 16px
+		font-weight: 700
+	&__right-block
+		position: relative
+		display: flex
+		justify-content: flex-end
+		width: 360px
+		text-align: center
+	&__form
+		border: 1px solid rgba($text-color-light, 0.5) 
+		border-bottom: none
+		padding-top: 39px
+		padding-bottom: 40px
+		&::before
+			content: ""
+			display: block
+			width: 56px
+			height: 1px					
+			background-color: rgba($text-color-light, 0.5)
+			position: absolute
+			bottom: 0
+			left: 0
+		&::after
+			content: ""
+			display: block
+			width: 56px
+			height: 1px					
+			background-color: rgba($text-color-light, 0.5)
+			position: absolute
+			bottom: 0
+			right: 0
+		.form__title
+			margin-bottom: 10px
+			font-size: 22px
+			font-weight: 700
+			text-transform: uppercase
+		.form__descr
+			width: 254px
+			margin: 0 auto 28px
+			font-size: 16px
+			font-weight: 400
+			line-height: 22px			
+		.form__button
+			position: absolute
+			bottom: -25px
+			left: 50%
+			transform: translateX(-50%)
+			width: 210px
+			height: 55px
+			border-radius: 50px
+			background-color: $active-color
+			font-size: 15px
+			font-weight: 700
+			&:hover
+				box-shadow: 0 0 13px rgba(0, 0, 0, 0.19)
+				background-color: darken($active-color, 15)
+.down-arrow
+	text-align: center
+	padding-bottom: 60px
+	&__img
+.outer
+	display: flex
+	padding-top: 45px
+	padding-bottom: 45px
+	justify-content: space-between
+	&__logo
+		margin-right: 60px
+	&__text
+		width: 320px
+		font-size: 16px
+		font-weight: 400
+		line-height: 20px
+	&__contacts
+		margin-right: 26px
+		display: flex
+		justify-content: flex-end
+		flex-wrap: wrap
+		width: 150px
+		span
+			font-size: 14px
+			font-weight: 300
+			line-height: 20px
+	&__phone
+		display: block
+		font-size: 19px
+		font-weight: 500
+	&__button
+		padding: 14px 25px
+		border-radius: 52px
+		font-size: 14px
+		font-weight: 700
+	&__left-block
+		display: flex
+		align-items: flex-start
+	&__right-block
+		display: flex
+		align-items: flex-start
+		justify-content: flex-end

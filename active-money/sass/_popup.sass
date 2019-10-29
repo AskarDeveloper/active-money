@@ -1,0 +1,90 @@
+.popup-overlay
+	position: fixed
+	background: url(../img/main/main-bg-img.png) center no-repeat, linear-gradient(75deg, $left-color, $right-color) 
+	background-size: cover
+	color: $text-color-light
+	height: 100vh
+	width: 100%
+	z-index: 5
+
+.popup-close
+	position: absolute
+	right: 3%
+	top: 3%
+	font-size: 36px
+	color: rgba($text-color-light, 0.5)
+	cursor: pointer
+	width: 20px
+	height: 20px
+	line-height: 22px
+
+.popup
+	position: relative
+	height: 100vh
+	width: 100%
+	&__wrap
+		width: 360px
+		position: absolute
+		top: 50vh
+		margin-top: -162.5px
+		left: 50vw
+		transform: translateX(-50%)
+	&__block
+		position: relative
+		width: 360px
+		text-align: center
+
+	&__form
+		border: 1px solid rgba($text-color-light, 0.5) 
+		border-bottom: none
+		padding-top: 39px
+		padding-bottom: 40px
+		&:before
+			content: ""
+			display: block
+			width: 56px
+			height: 1px					
+			background-color: rgba($text-color-light, 0.5)
+			position: absolute
+			bottom: 0
+			left: 0
+		&:after
+			content: ""
+			display: block
+			width: 56px
+			height: 1px					
+			background-color: rgba($text-color-light, 0.5)
+			position: absolute
+			bottom: 0
+			right: 0
+
+		.form__title
+			margin-bottom: 10px
+			font-size: 22px
+			font-weight: 700
+			text-transform: uppercase
+
+		.form__descr
+			width: 260px
+			margin: 0 auto 28px
+			font-size: 16px
+			font-weight: 400
+			line-height: 22px
+			
+		.form__button
+			position: absolute
+			bottom: -25px
+			left: 50%
+			transform: translateX(-50%)
+			width: 210px
+			height: 55px
+			border-radius: 50px
+			background-color: $active-color
+			font-size: 15px
+			font-weight: 700
+			&:hover
+				box-shadow: 0 0 13px rgba(0, 0, 0, 0.19)
+				background-color: darken($active-color, 15)
+
+.popup-active
+	display: block

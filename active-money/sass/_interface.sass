@@ -1,0 +1,22 @@
+iframe
+	border: none
+.section-title
+	position: relative
+	margin-top: 0
+	margin-bottom: 50px
+	font-size: 26px
+	font-weight: 600
+	text-transform: uppercase
+	text-align: center
+	color: $text-color-dark
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		bottom: -25px
+		right: 50%
+		margin-right: -24px
+		transform: translateY(-50%)
+		width: 48px
+		height: 1px
+		background: linear-gradient(95deg, $left-color , $right-color)
